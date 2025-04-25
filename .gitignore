@@ -3,9 +3,10 @@
 .gradle
 build
 price_scenarios
+rocksdb_data
 # Log file
 *.log
-
+*.mdb
 # BlueJ files
 *.ctxt
 
