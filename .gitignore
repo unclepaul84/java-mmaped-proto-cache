@@ -1,6 +1,8 @@
 # Compiled class file
 *.class
-
+.gradle
+build
+price_scenarios
 # Log file
 *.log
 
