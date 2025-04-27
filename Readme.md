@@ -122,7 +122,7 @@ MMappedProtoHashMapCache(Path mapDir, Function<byte[], P> protoFactory,
   ⚠ **Warning:** Ensure that this value is large enough to handle the number of entries you expect to store (2X the number of expected entries). If it is set too low, the cache.put() will start throwing exceptions.
 
 - **onHeapValueCacheSize:**  
-  The size of the optional on-heap cache for stored entries. A non-zero value enables caching of frequently accessed items for faster retrieval. Set to 0 to disable this feature.
+  The size of the optional on-heap cache for stored entries. A non-zero value enables caching of frequently accessed items for faster retrieval. Set to 0 to disable this feature. This feature is a trade off between deserialization cost and on-heap memory usage. 
 
 - **deserializeBufferCacheSizeBytes:**  
   The size (in bytes) of the thread-local buffer used during the deserialization of Protocol Buffer messages. Adjust this value based on the expected size of your messages.
